@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script>
+   
+
+    function dismiss(){
+      const topnav=document.getElementById("texts")
+      const secondnav=document.getElementById("row")
+      topnav.style.display="block"
+      secondnav.style.display="block"
+      const dismissitem=document.getElementById("dismiss")
+      const containerElement=document.getElementsByClassName("container")
+
+      dismissitem.style.display="none"
+    }
+
+
+    //animation
+
+    document.addEventListener('DOMContentLoaded', function() {
+  const text1 = document.querySelector('.animate-text1');
+  const text2 = document.querySelector('.animate-text2');
+
+  function animateText1() {
+    text1.classList.add('active');
+    setTimeout(function() {
+      text1.classList.remove('active');
+      animateText2();
+    }, 3000); 
+  }
+
+  function animateText2() {
+    text2.classList.add('active');
+    setTimeout(function() {
+      text2.classList.remove('active');
+      animateText1();
+    }, 4000); 
+  }
+
+  animateText1(); 
+});
+
+/**
+ * This function opens a new browser window with a WhatsApp message to the
+ * specified phone number.
+ *
+ * @return {void} This function does not return anything.
+ */
+function addToCart(){
+  // The phone number to which to send the WhatsApp message.
+  const number=7981159097
+  
+  // Construct the URL for the WhatsApp message.
+  const url="https://wa.me/"+number
+  
+  // Open a new browser window with the WhatsApp message.
+  window.open(url,"__blank")
+}
+
+/**
+ * This function replaces the current page with the form.html page.
+ * 
+ * @return {void} This function does not return anything.
+ */
+function nithin(){
+  // Replace the current page with the form.html page.
+  // The location.replace() method replaces the current page with the page
+  // specified in the URL parameter.
+  // The "form.html" string is the URL of the page to be loaded.
+  location.replace("form.html")
+}
+/**
+ * This function replaces the current page with the cart.html page.
+ * 
+ * @return {void} This function does not return anything.
+ */
+function accumenta(){
+  // Replace the current page with the cart.html page.
+  // The location.replace() method replaces the current page with the page
+  // specified in the URL parameter.
+  // The "cart.html" string is the URL of the page to be loaded.
+  location.replace("cart.html")
+}
+
+  function nani() {
+    // Replace this number with the phone number you want to message
+    var phoneNumber = "6303971223";  // Replace with your phone number
+
+    // Construct the WhatsApp link
+    var whatsappLink = "https://wa.me/" + phoneNumber;
+
+    // Open the link in a new tab/window
+    window.open(whatsappLink);
+}
+  </script>
+  
+
+</head>
+<body style="overflow-x: hidden;">
+<div style=" margin-top: 2px; ">
+
+<div class="container-fluid" style="padding: 0;" >
+  <div id="dismiss" style="display: none;">
+    <input type="text"/>
+    
+    <svg  onclick="dismiss()"  style="height: 5vh; width: 3vh;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+   </div>
+   <div class="texts" id="texts">
+    <div class="text-container">
+      <h5 style="margin-top: 0.5%;" class="animate-text1">Free delivery forevery on all prepaid orders</h5>
+      <h5 style="margin-top: 0.5%;" class="animate-text2">Flat 10% off on first order.use code WELCOME 10 and above Rs.299.</h5>
+    </div>
+    </div><br>
+
+    
+    
+    
+    <div class="header">
+      <img  style="margin-left: 5%; margin-bottom: 3%; height: 10vh;" src= alt="">
+      <ul style="margin-bottom: 4%; margin-right: 2%;" class="list">
+        <li  class="active">
+          <a style="color: black;" href="#">Home</a>
+        </li>
+        <li class="active">
+          <a style="color: black;" href="#">New Lanches</a>    
+        </li>
+        <li class="active" >
+       <a style="color: black;"href="#">Spices & blends</a>
+        </li>
+        <li class="active">
+          <a style="color: black;" href="#">Super savers</a>
+        </li>
+        <li class="active">
+        <a style="color: black;" href="#">Nuts&Oils </a>
+        </li>
+        <li class="active">
+          <a style="color: black;" href="#">Specials</a>
+        </li>
+      </ul>
+      <div style="margin-bottom: 4%; margin-right: 3%;" class="rows">
+        <div onclick="openNav()">
+      <i  class="fa fa-search"></i>
+        </div>
+      <svg  onclick="nithin()"  style="height: 5vh; width: 3vh;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+      
+      <svg onclick="accumenta()" style="height: 5vh; width: 3vh;"aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 37 40"><path d="M36.5 34.8L33.3 8h-5.9C26.7 3.9 23 .8 18.5.8S10.3 3.9 9.6 8H3.7L.5 34.8c-.2 1.5.4 2.4.9 3 .5.5 1.4 1.2 3.1 1.2h28c1.3 0 2.4-.4 3.1-1.3.7-.7 1-1.8.9-2.9zm-18-30c2.2 0 4.1 1.4 4.7 3.2h-9.5c.7-1.9 2.6-3.2 4.8-3.2zM4.5 35l2.8-23h2.2v3c0 1.1.9 2 2 2s2-.9 2-2v-3h10v3c0 1.1.9 2 2 2s2-.9 2-2v-3h2.2l2.8 23h-28z"></path></svg>
+      </div>
+    
+    </div>
+
+<div style="margin-bottom: 5%;" id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div  class="carousel-item active">
+      <img src= >
+    </div>
+    <div class="carousel-item">
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzfe-nzNfrAK9UED4iHmTfuBbzddrzAaWhDw&sn//2Q== alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpSL9cZ8zHEFHovw12yjIFCD_gg24FR3giXA&s alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<div>
+<h3>Premium Indian Spices - Freshest, Cleanest, and Most Aromatic Spices</h3><br>
+<p>Looking for the best place to buy premium spices online? Look no further than Rooted Peepul! We bring the best of them to your doorstep. Our chemical free spices are hand-selected and freshly stone-grounded to give you the most flavorful experience ever!</p><br>
+<h4>WHY ROOTED PEEPUL?</h4>
+<p>✔ Less Chilli More Spices</p>
+<p>✔ No Colour or Preservatives</p>
+<p>✔ Plastic-Free Packaging</p>
+<p>✔ Stone-Grounded</p>
+</div>
+ </div><br><br>
+ <!--ramya-->
+ <div style="display: flex; flex-direction: row; margin-right: 15%;">
+  <img src="https://rootedpeepul.com/cdn/shop/files/taste_enhancers_360x.jpg?v=1705135798" style="margin-left: 3%;">
+  <img src="https://rootedpeepul.com/cdn/shop/files/5_360x.png?v=1674542098" style="padding-left: 3%;">
+  <img src="https://rootedpeepul.com/cdn/shop/files/7_360x.png?v=1674542176" style="padding-left: 3%;">
+</div>
+
+<div>
+  <h1 style="font-size: 45px; text-align: center; padding-top: 3%; font-family: cursive;">Shop By Category</h1>
+</div>
+
+<div style="display: flex; align-items: center; gap: 10px; justify-content: center;margin-top: 30px;">
+  <hr style="width: 100px; border-top: 1px solid rgb(228, 248, 154); margin: 0; padding: 0;">
+  <h5 style="text-align: center; color: rgb(82, 68, 68);">THE BEST COLLECTION</h5>
+  <hr style="width: 100px; border-top: 1px solid rgb(251, 253, 146); margin: 0; padding: 0;">
+</div>
+
+
+<div class="container-fluid" style="display: flex; flex-direction: row; padding-top: 3%;">
+  <div class="spices">Spices & Blends</div>
+  <div class="turmaric">Immunity</div>
+  <div class="savers">Super Savers</div>
+  <div class="Small">Small and Perfect</div>
+</div>
+
+<h1 style="font-family: cursive; text-align: center; font-size: 43px ; margin-top: 30px;">Featured Products</h1>
+
+<div style="display: flex; align-items: center; gap: 10px; justify-content: center;">
+  <hr style="width: 50px; border-top: 1px solid rgb(197, 204, 95); margin: 0; padding: 0;">
+  <h5 style="text-align: center;"> </h5>
+  <hr style="width: 50px; border-top: 1px solid rgb(206, 196, 110); margin: 0; padding: 0;">
+</div>
+
+<div style="display: flex; flex-direction: row; width: 95vw; align-items: center; justify-content: space-between; position: relative;">
+  <button style="width: 3vw; height: 10vh; font-size: 30px; border-radius: 10px;" onclick="scrollCards('left')"><</button>
+
+  <div id="productContainer" class="example" style="display: flex; flex-direction: row; width: 80vw; overflow-x: auto;">
+      <!-- Product items -->
+
+      <div style="margin-right: 20px; margin-top: 7%;" >
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://www.bigbasket.com/media/uploads/p/m/40292810-9_1-rooted-peepul-mummywala-khichdi-masala-no-colours-preservatives.jpg" style="height:197px; width:197px;"> </div>
+          <h6>Mummy wala Khichdi Masala | 75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p> Rs. 195.00 </p>
+          <div style="padding-top:16px;;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black; ">Add to cart</button>
+</div>               
+</div>
+
+      <div style="margin-right: 20px;  margin-top: 7%;">
+          <div style="width: 200px;   height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img  src="https://media.gettyimages.com/id/1210312822/photo/a-cup-of-tandoori-tea-a-special-unique-tea-or-chai-making-process.jpg?s=612x612&w=0&k=20&c=7wAWPqo32HJ0z3QoxnIvrHCymp1xn5D2pBrzcDD5avk=" style="height:197px; width:197px;"></div>
+         <h6>Smoked Tandoori Chai Masala | 75gms</h6>
+          <del><b style="color: red;">Rs. 325.00</b></del> 
+          <p>Rs. 295.00</p>
+          <div style="padding-top:16px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+          </div>               
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 7px;  border-style: groove; box-shadow: 5px 5px 5px 0px gray;"><img src="data:image/jpeg;base64,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" style="height:197px;width:197px;"></div>
+          <h6>Amritsari Bharwan Paratha Masala |75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p> Rs. 195.00</p>
+          <div style="padding-top:16px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+          </div>                
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray; "><img src="https://www.spiceupthecurry.com/wp-content/uploads/2020/11/masala-toast-sandwich-1.jpg" style="height:197px;width:197px;"></div>
+          <h6>Bombay Sandwich Masala | 75Gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p>
+          <div style="padding-top:19px;"> 
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+          </div>
+          
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://www.tatanutrikorner.com/cdn/shop/products/00_3cfb9108-9a96-410f-84cb-ed4ea17410c4.jpg?height=350&v=1681447536" style="height:197px;width:197px;"></div>
+          <h6>Delhi Butter Chicken Masala | No Preservatives | 75 gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del> 
+          <p>Rs. 195.00</p>
+          
+         <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+                        
+</div>
+
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://thestateplate.com/cdn/shop/files/Pohamasala.jpg?v=1693375049" style="height:197px; width:197px;"></div>
+          <h6>Indori Poha Masala | 100% Natural | 75gms</h6>
+          <del><b style="color:red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:16px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+          </div>               
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://www.bigbasket.com/media/uploads/p/m/40292810-9_1-rooted-peepul-mummywala-khichdi-masala-no-colours-preservatives.jpg" style="height:197px; width:197px;"></div>
+          <h6>Mummy wala Khichdi Masala | 75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p>
+          <div style="padding-top:17px;"> 
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+          </div>
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="data:image/jpeg;base64,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" style="height:197px;width:197px;"></div>
+          <h6>Amritsari Bharwan Paratha Masala | 75gms</h6>
+          <del><b style="color:red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p>
+          <div style="padding-top:19px;"> 
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+          </div>             
+</div>
+
+
+
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://media.gettyimages.com/id/1210312822/photo/a-cup-of-tandoori-tea-a-special-unique-tea-or-chai-making-process.jpg?s=612x612&w=0&k=20&c=7wAWPqo32HJ0z3QoxnIvrHCymp1xn5D2pBrzcDD5avk=" style="height:197px; width:197px;"></div>
+          <h6>Smoked Tandoori Chai Masala | 75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:16px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+          </div>
+     
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="data:image/jpeg;base64,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" style="height:197px; width:197px;"></div>
+          <h6>Amritsari Bharwan Paratha Masala | 75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p>
+          <div style="padding-top:18px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+      </div>
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://www.spiceupthecurry.com/wp-content/uploads/2020/11/masala-toast-sandwich-1.jpg" style="height:197px;width:197px;"></div>
+          <h6>Bombay Sandwich Masala </h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:36px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+
+</div>            
+</div>
+
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://www.tatanutrikorner.com/cdn/shop/products/00_3cfb9108-9a96-410f-84cb-ed4ea17410c4.jpg?height=350&v=1681447536" style="height:197px; width:197px;"></div>
+         <h6>Delhi Butter Chicken Masala | No Preservatives | 75 gms |</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div>
+
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://thestateplate.com/cdn/shop/files/Pohamasala.jpg?v=1693375049" style="height:197px; width:197px;"></div>
+          <h6>Indori Poha Masala | 100% Natural | 75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:18px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div>
+</div>
+
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="data:image/jpeg;base64,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" style="height:197px;width:197px;"></div>
+          <h6>Amritsari Bharwan Paratha Masala | 75gms</h6>
+          <del><b style="color:red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:18px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div>
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://www.bigbasket.com/media/uploads/p/m/40292810-9_1-rooted-peepul-mummywala-khichdi-masala-no-colours-preservatives.jpg" style="height:197px; width:197px;"></div>
+          <h6>Mummy wala Khichdi Masala | 75gms| 75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:18px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div>
+</div>
+
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAGBwMEBQIBAP/EAD0QAAEDAwIDBgMGBAQHAAAAAAECAwQABRESIQYxQRNRYXGBkRQioQcyQrHR8BYjweEVNENiM0RSU3KCg//EABoBAAIDAQEAAAAAAAAAAAAAAAMEAQIFAAb/xAAnEQACAwACAgAFBQEAAAAAAAABAgADEQQhEjEiQVFhgRMUobHwBf/aAAwDAQACEQMRAD8ANGp02XI1uyVoZLZLbQWgFxY7ticd+/8Aat/iSFJbckNnsnXMK+bJSo8knIGx2I67451i2u4pnwYsjGlwKyoJbyUEHCwAQcZwoYG5B8q5mLDbkjWtKWnWyQTvkgk5GN9tz/7V49iSxD+xNqsKW6EE+I3JfCXEjPEFlZcguLJUpgOAodCThSFgeGPoee9P20XBm7WuHcYuexlMpeRnmAoZwfGkpxu81K4bZdc1h1l1OvUnG2NPLnvkU0vs5iPQOBrLGkgh1EUFQPTJJA9jXqeNZ+pX5TKurNblTCWvtSdWnIzjOM71wpenGE6vLpVO4W233LSqYwlbiBhDgJStHkobj3o+wU0K+oeVarnF3tV7eKR/pTU9qPIK5j612xO4gZVpmWuO+P8AuR3wB7K3/Ku2Tk2JUVmW32b6NQzkEEgpPeCNway3HLnajlQNwiD8XJ5A8eivoatIuzY/zUWXG8VtFSfdOR71aYlR5Kcx3m3R10KBxXTpFBuUWcP5Dg1gZLatlD0q361nzLUw+rtAgJcBzkbb9+24PiKhAuDI0JljA5dqzrPuFDPqM106Jxpa4t1ldnkIW4l9IT3uJGrHkQa0GrUe0bZY7SRLOFJKEZcXg5yRyHidvGiKzcKTZUjt5KVQ29ARlxILpAz90ck8+Z9utFkZNqsSTGjJSl0pC1pHzOLGcalHmeR3NZR4RNhdjg/mPry/FAqDTB+3cDNSFR5F/wAOllYcRFSrKNQ5FZ/ER3cvOjB95uM1rdUEIH72FTDYb86D+PbkGI0ZpuUlgPqKS9t8uNsDO3PANPnxqT4fUUHlc/xHsyzK4xhMqw2wtwZxqKwKntXFdvuoIjHCwrRuoaSru1DzpTJv9lhNCPMjNutglCEJQHFKUB83gBqxj12xvUli4hiS7+1A4etejcFaE4QnJIyMAbkb+HOl1usPedRpuPWBm9xvuXKYgkG2rOO5f9q4TfdKgmRCfaz1JFdzryIw+HipDz4GN9hnuz30K3pFxuMhp6PcexlMg6QkBSRnHyqTjce39ai3lBT4qe5Srjlu2HUKVXtKv8syT/uWrH5VSfmrlHU5Hj5ByFKayoep3FBcDjLsJyLbxIyYUk/KmUjIZd8f9vWiZ2N2uVheQcYITz8dj4nelXuu3sxhaqh6EmTdJ0fC0L0o6oKiseuc/TFXk8WRUpAdjO6+ugpx9TWKlDiVJbOVDmSvJI8jXaVfKOR9BULybl9NJaith6heFYoa4wsAu4alx5TkWfHSQy8k5Az0KeooizVSaT2ZxzxW2QCMMywc7gVf+LbrIgpg25pSJTbaRNWgKCmXAQQUqyAUnB6cqC5VtvDylmSw8s61OqCiNlKwVKxnmdvpXMli5F912MHEofeKAWnSpKzk7A9cb18qHxChQQsyU7bDtTyx5+X7FKsdPcwbXa5izb/vxIF2dDREi62x1xpBySl4o8PwkZ3xWtYLgm3IeftNpYhthOAEgqW4emtasqI8M4rPVBvilOMvpkqCRlaCvPXO+/h9KZVmsjEnhFsIbYS49H1JLTmsE9DqPpnu5dKqQSME0f8An3N5FG9feBlxtt3MWJMgXCa3NcTqUpv5knOTlQ7zmqYvfHNrVqlw49yZT17LCsfs1oSuLZjLyWbZZ5UtaEhKwj7oOOVQKd4vmuokQ7PEhE9ZLpWs7dwpBdzsD8z0Rz5GVHON7TdG1ROI7PIhAgjtEoKkp/fhU1ouybElBhXJNwsOoZ7NWXYvPmDvpz4Vkfw7xTepDqrjKdYYUnfQ12YPhpxWIxwhc0S3TZ5TpLedCykpC+hAV1owqrzNz+oMs/vI6m3EPqS/GdS4lbYKVJUNweSsd1ejJyXFDPgKVXD97vXCMlTF4jOrgqUAVJTlKCeRSeX7NM+NMhyo7Uhh4qbdSFAgE/0payooftDJYGEM81C8nUk1Cm4w15CJLasHB0qzXRlxsf8AFT9a39EyIteNLRMiSlTIjr3YFWtQC9IbVskaQOvj40JOS7gSQuY/qGw1OqJA7ufgPancsxpepDTqFqAyQDkgULXnhFqYSGGUpcUokadtyedBarToMz7uCWfyQ5sXzN0U3JQqbOm9mo/zC06So++Qdz18acFm4z4buTLbLE9ppwJADTuG1D05CsGz/ZzbYo1ykolvKzlbw1J8ko5HzVnyFe3f7NodwAW1pYX/ANPZowPRIFUGL0I1xuMKV96Z7e+FZEd1+78JSdbzoPbRC4FtPA7nxB9aFIHFEKC+Id5ZuNmdTnUygkNk99W5f2d3OECqBeZLCkjGRqSgHyB5flS3vF54gakuwbvKcdcYWW1tSEpWAoHB5ihNUj9+poJcydRvfxTaZKQkToizvlOrCVJx1Kh+XdVdfEVrissNNTLXHYScqSkjB79t8AnHlSVNydP/AC8Q/wDx/vXbc6U44UNfDtuA4CUR0nPuDQxw/vCfuh9I07pxRw/NdSlb7shB++yyxrSr1xkelCkiYiPIcTaW5sCKo6ksLktt4PeEk5A2oTflXLX2Lz76FZwW9Rb+gxUke2SFN5DTpydylRI+goi8dE9mUa9m9CO0XyDbbnLt62XypuQsdMd/5Vc/iOApouJju4DYczjoaGeK2Ox40knGzhSv1LZ/SvY6MxgnG5ZYT7qpW6yxHIDQtSIygkQ64ZlNzZExaEqAb0p3A6k/pRAgJDqc4ycge1DXAqQLbJdH+pIO/oP1qzxFKWxGUptRChuCOhrTp01jYlbnmcmw24oOKWtBR8xSFZJ2qcSUKC9eEhHNSthjvpewftSgsnsL8w806nb4llGtKvNPMHyzV+R9o3CejtE3NB23SI7pUoeWBVCrCd0YXMyI8tH8h5LoUDyHMcqTHGfDqrpxNc5kIpUC4lO+6VFKEpP1TzrRl8fmYVweGYzsZp1R1yXcBeDz0gfd8858qIrRGbh2rtXhslPqT3edXRTnxSNyLKx8HLu9wdiPMmG4ykKLunUNRPygAEZB3rdHAlxs09uTOjoUy0sFUxhSVgjVnVpVjfw/Ojnh9pLDhedKPinipaU4z67fhAxvy5ded6ZcEXGMuLbJLfbMgh1GcnVuBnfocjzzUgYIMuWOxB8YXG5XS9SJUp/4g9ppTqRhOANgP0267CqKbsHkj4p+QytA0BDIASAPam5dOCYElP8AKQYMwIwvI1Ic/wDNP9Rg+dAlw4Pk26UuPOgOrcG6Vt4WFJ6HOPod64kfOWVvoYwOMozjnEiFoaKh2CVFQ7/mGPpVRoBpGXAU4CM5SdtO9Hz8SNJwZDDThGwKkgketV/8BtZVkw0nwKlEe2aBbxFsfy2GTkMgwSLgtSTw+0UZ3UrORjw/ICrV0jCSypB6irjTaGW0tsoS22kYSlIwAPAV8qmlXxAECTp2J7iXhGUp9TkcZz0ofY4TujrmnsAkd9PhxlCuYzXKI7QVkJFTk7YDcK8G/CqS5J3VRE/IjyLmq2tOpCoaQtbZ/Eog488Y5eNELaEjkKWP2jxkWq9JukIqRJWApeFbE/v97mob1IYaMhfagqLc3pMqQWmXF6W221E6lbJTq29fOqttYs90uHx9vdWVR3NS+yBQpR26EdcDcHB2z0qeM4t2NFdKiHDGbcK0kglRJyfpVf4doMvtMoSykgqUWgElZz19+Q2qoGSgbvDPOJroqK84uLcE7ndKkHTnPLkR06451atFgNzt7U6/NB+Y+NZ2xoSfupx5b+ZNBFvWq43SBHmqU60nfSpRwcAqwfAkb0Lyb9dp9wmvyLlL1F9QAQ+tKUjbAABwBQaz0WhjUEbBP//Z" style="height:197px; width:197px;"></div>
+          <h6>Amritsari Bharwan Paratha Masala | 75gms</h6>
+          <del><b style="color:red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:18px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div>
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://thestateplate.com/cdn/shop/files/Pohamasala.jpg?v=1693375049" style="height:197px;width:197px;"></div>
+          <h6>Indori Poha Masala | 100% Natural | 75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p>
+          <div style="padding-top:18px;"> 
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div>
+</div>
+
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://www.tatanutrikorner.com/cdn/shop/products/00_3cfb9108-9a96-410f-84cb-ed4ea17410c4.jpg?height=350&v=1681447536" style="height:197px;width:197px;"></div>
+          <h6>Delhi Butter Chicken Masala | No Preservatives | 75 gms |</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div> 
+
+      
+         <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://www.spiceupthecurry.com/wp-content/uploads/2020/11/masala-toast-sandwich-1.jpg" style="height:197px;width:197px;"></div>
+          <h6>Bombay Sandwich Masala </h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:37px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div>          
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+          <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="data:image/jpeg;base64,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" style="height:197px;width:197px;"></div>
+          <h6>Amritsari Bharwan Paratha Masala | 75gms</h6>
+          <del><b style="color: red;">Rs. 225.00</b></del>
+          <p>Rs. 195.00</p> 
+          <div style="padding-top:19px;">
+          <button onclick="nani()" style="color: aliceblue; background-color: black;">Add to cart</button>
+</div>               
+</div>
+
+      <div style="margin-right: 20px; margin-top: 7%;">
+      <div style="width: 200px; height: 200px;  border-radius: 5px;  border-style: groove;box-shadow: 5px 5px 5px 0px gray;"><img src="https://media.gettyimages.com/id/1210312822/photo/a-cup-of-tandoori-tea-a-special-unique-tea-or-chai-making-process.jpg?s=612x612&w=0&k=20&c=7wAWPqo32HJ0z3QoxnIvrHCymp1xn5D2pBrzcDD5avk=" style="height:197px; width:197px;"></div>
+      <h6>Smoked Tandoori Chai Masala | 75gms</h6>
+      <del><b style="color: red;">Rs. 225.00</b></del>
+      <p>Rs. 195.00</p>
+      <div style="padding-top:18px;">
+      <button onclick="nani()" style="color: aliceblue; background-color: black;" >Add to cart</button>
+</div>
+</div>
+</div>
+
+
+
+  <button style="width: 3vw; height: 10vh; font-size: 30px; border-radius: 10px;" onclick="scrollCards('right')">></button>
+</div>
+
+<script>
+  const scrollCards = (direction) => {
+      const container = document.getElementById('productContainer');
+      const scrollAmount = 300; // Adjust scroll amount as needed
+      if (direction === 'left') {
+          container.scrollBy({
+              left: -scrollAmount,
+              behavior: 'smooth'
+          });
+      } else if (direction === 'right') {
+          container.scrollBy({
+              left: scrollAmount,
+              behavior: 'smooth'
+          });
+      }
+  };
+
+</script>
+
+ </div><br><br><br>
+ <!--sandhya-->
+ 
+ <div class="bg">
+  <h1 style="color:black;margin-left: 340px;">Our History - A LITTLE STORY</h1>
+  <p style="color:black;margin-left:300px ;margin-bottom: 1px;">Putting healthy eating at the forefront of urban lifestyle while caring for people and</p>
+  <p style="color:black;margin-left: 530px;">planet alike.</p>
+  <p style="color:black;margin-left:300px ;margin-top: 4px;margin-bottom: 1px;">What can be better than the joy of touching that perfect horizon of Health and Taste.</p>
+  <p style="color:black;margin-left: 300px;margin-bottom: 1px;">The ‘quest for purity’ and its amalgamation with the ‘satisfaction of taste buds’ are</p>
+  <p style="color:black;margin-left:450px ;">the driving forces behind Rooted Peepul.</p>
+
+  <p style="color:black;margin-left: 300px;margin-top: 7px;margin-bottom: 1px;">The vision and the process behind Rooted Peepul has been simple: Keep going back</p>
+  <p style="color:black;margin-left: 300px;margin-bottom: 1px;">to the drawing board, or in our case the kitchen, till the time we are not fully satisfied</p>
+  <p style="color:black;margin-left:300px ;margin-bottom: 1px;">with each and every aspect of our various heathy lattes, spices and spice mixes we</p>
+  <p style="color:black;margin-left: 530px;">are selling.</p>
+  <button style="margin-left: 525px;margin-top: 3px;margin-bottom: 15px;">Know More</button>
+</div>
+
+
+<div>
+  <h1 style="margin-top: 50px;margin-left:430px ;font-family:cursive;">What They're Saying</h1>
+</div>
+
+
+<div style="margin-top: 60px;">
+<div style="display:flex;align-items:center; gap:10px;justify-content: center;">
+  <hr  style="width:45px; border-top:1px solid rgb(126, 113, 113);margin:0; padding:0;"/>
+  <h5 style=" text-align: center;color:darkgreen;">WE LOVE OUR CLIENTS</h5>
+  <hr style="width:45px;border-top:1px solid rgb(126, 113, 113);margin:0; padding:0;" />
+  </div>
+</div>
+
+<div>
+<h1 style="margin-left: 600px; width:30vw;">,,</h1>
+
+</div>
+
+
+<div style="display: flex;flex-direction: row;">
+  <div>
+  <h1 style="margin-left: 150px;">,,</h1>
+  <p style="margin-left:40px ;color:darkgreen;margin-bottom: 1px;">This IS a truly ‘naturally good’ product !</p>
+  <p style="margin-left:40px ;margin-bottom: 1px;">ONE can taste the authentic spiced</p>
+  <p style="margin-left:40px ;margin-bottom: 1px;">turmeric AND there’s NO acidic OR</p>
+  <p style="margin-left:40px ;margin-bottom: 1px;">artificial flavour neither IS it sweetened,</p>
+  <p style="margin-left:40px ;margin-bottom: 1px;">apt FOR diabetics AND diet conscious</p>
+  <p style="margin-left:40px ;margin-bottom: 1px;">ppl too..</p>
+
+  <p style="margin-left:90px ;color: darkgreen;margin-top: 30px;">-Prackriti</p>
+   </div>
+
+   <div>
+   <h1 style="margin-left: 265px;">,,</h1>
+   <p style="margin-left: 160px;color:darkgreen;margin-bottom: -1px;">Lovely product. Very tasty AND my kid</p>
+   <p style="margin-left: 160px;margin-bottom: -1px;">loves it. Winter IS coming AND the little</p>
+   <p style="margin-left: 160px;margin-bottom: 1px;">ONE was waking WITH sniffles. 5 nights </p>
+   <p style="margin-left: 160px;margin-bottom: 1px;">drinking this before slepp and waking</p>
+   <p style="margin-left: 160px;margin-bottom: 1px;">up EVERY morning fresh with no more</p>
+   <p style="margin-left: 160px;margin-bottom: 1px;">sniffle.</p>
+   <p style="margin-left: 230px;color: darkgreen;margin-top: 30px;">-Kaajari Tiwari</p>
+  </div>
+
+
+
+  <div>
+    <h1 style="margin-left: 280px;">,,</h1>
+    <p style="margin-left:170px ;color:darkgreen;margin-bottom: 1px;">Writing AFTER 3 weeks of use. The</p>
+    <p style="margin-left:170px ;margin-bottom: 1px;">product IS very well balanced WITH</p>
+    <p style="margin-left:170px ;margin-bottom: 1px;">RIGHT amount of spices. Has become</p>
+    <p style="margin-left:170px ;margin-bottom: 1px;">part of my daily diet.Ideal FOR this TIME</p>
+    <p style="margin-left:170px ;margin-bottom: 1px;">WHEN immunity needs TO be high. The</p>
+    <p style="margin-left:170px ;margin-bottom: 1px;">glass jar keeps it.</p>
+    <p style="margin-left:250px ;color:darkgreen;margin-top: 30px;">-Angad Singh</p>
+ </div>
+
+</div>
+
+
+<div>
+  <h1 style="font-family: cursive; margin-left: 450px;margin-top: 80px;">Latest Our Posts</h1>
+</div>
+
+
+<div class="container">
+  <div class="card-deck">
+    <div class="card">
+      <div class="card-body">
+        <img src="https://rootedpeepul.com/cdn/shop/articles/Untitled_design_1_540x.png?v=1675238628" style="width:100%">
+      </div>
+      <div class="card-footer">
+        <h4 style="margin-left: 20px;margin-top: 10px;">Benifits of Preservative Free 
+          <br/>Food
+      </h4>
+      <p style="margin-left: 20px;margin-bottom: 1px;">WHAT IS PRESERVATIVE FREE FOOD</p>
+      <p style="margin-left: 20px;margin-bottom: 1px;">Preservative-free food refers to edible</p>
+      <p style="margin-left: 20px;">products that do not conta...</p>
+    
+      <button style="margin-left: 80px;margin-top: 20px;">READ MORE</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="https://rootedpeepul.com/cdn/shop/articles/biryani_masala_vs_garam_masala_540x.webp?v=1661327594" style="width: 100%; height: 100%;">
+      </div>
+      <div class="card-footer">
+        <h4 style="margin-left: 20px;margin-top: 10px;">Benifits of Preservative Free 
+          <br/>Food
+      </h4>
+      <p style="margin-left: 20px;margin-bottom: 1px;">WHAT IS PRESERVATIVE FREE FOOD</p>
+      <p style="margin-left: 20px;margin-bottom: 1px;">Preservative-free food refers to edible</p>
+      <p style="margin-left: 20px;">products that do not conta...</p>
+    
+      <button style="margin-left: 80px;margin-top: 20px;">READ MORE</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <img src="data:image/jpeg;base64,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" style="width: 100%;height: 55%;">
+        <div class="card-footer">
+          <h4 style="margin-left: 20px;margin-top: 10px;">Benifits of Preservative Free 
+            <br/>Food
+        </h4>
+        <p>WHAT IS PRESERVATIVE FREE FOOD</p>
+        <p>Preservative-free food refers to edible</p>
+        <p>products that do not conta...</p>
+      
+        <button style="margin-left: 80px;">READ MORE</button>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+<div>
+  <button style="margin-left: 570px;margin-top: 100px; background-color: black;color:white;padding-left: 15px;padding-top: 10px;padding-bottom: 10px;padding-right: 15px;">VIEW ALL</button>
+</div>
+
+
+<div class="color" >
+
+<div style="margin-bottom: 30px;">
+  <h5 style="margin-left: 80px;margin-top:50px;padding-top: 60px;">Quick links</h5>
+</div>
+
+<div style="display: flex;flex-direction: row;">
+<div>
+  <a  style="margin-left: 80px;color: rgb(126, 113, 113); " href="#">About Us</a>
+</div>
+
+<div>
+  <a href="#"  style="margin-left: 30px;color: rgb(126, 113, 113);">Privacy Policy</a>
+</div>
+
+<div>
+  <a href="#"  style="margin-left: 30px;color: rgb(126, 113, 113);">Refund Policy</a>
+</div>
+
+<div>
+  <a href="#"  style="margin-left: 30px;color: rgb(126, 113, 113);">Shipping Policy</a>
+</div>
+
+
+</div>
+
+<br >
+<div style="display: flex;flex-direction: row;">
+<a href="#"  style="margin-left:80px ;margin-top: 5px;color: rgb(126, 113, 113);">Terms of Service</a>
+
+
+<a href="#"  style="margin-top: 5px; margin-left: 30px;color: rgb(126, 113, 113);">Contact</a>
+</div>
+
+<div >
+<h5 href="#"  style="margin-left:650px;margin-top: -160px; display:flex;flex-direction:column">Newsletter<h5/>
+
+</div>
+<br/>
+<div style="display: flex;justify-content: end; margin-right: 5%;">    
+
+<input type="text" placeholder="Email address" style="width: 400px;padding: 5px;">
+
+<button href="#"  style="color: white;background-color: black;">subscribe</button>
+
+
+</div>
+<hr style="margin-top: 80px;border: 1px solid black;">
+
+
+
+
+<div style="display: flex;flex-direction: row;">
+<div style="width:2vw; margin-left: 1000px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+</div>
+
+ <div style="width:2vw; margin-left: 30px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"/></svg>
+</div>
+
+<div style="width:2vw; margin-left: 30px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M282 256.2l-95.2-54.1V310.3L282 256.2zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm14.4 136.1c7.6 28.6 7.6 88.2 7.6 88.2s0 59.6-7.6 88.1c-4.2 15.8-16.5 27.7-32.2 31.9C337.9 384 224 384 224 384s-113.9 0-142.2-7.6c-15.7-4.2-28-16.1-32.2-31.9C42 315.9 42 256.3 42 256.3s0-59.7 7.6-88.2c4.2-15.8 16.5-28.2 32.2-32.4C110.1 128 224 128 224 128s113.9 0 142.2 7.7c15.7 4.2 28 16.6 32.2 32.4z"/></svg>
+ </div>
+</div>
+
+<p style="margin-left: 880px;">© 2024, Rooted Peepul Powered by Shopify</p>
+</div>  
+ </body>
+</html>  

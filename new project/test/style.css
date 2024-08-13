@@ -1,0 +1,195 @@
+  .container {
+    height: 100vh;
+    /* width: 100%; */
+  }
+  .texts{
+  background-color:#6E831D;
+  /* display: block; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .header{
+    height: 15vh;
+    display: block;
+    width: 90vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rows{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 8vw;
+  }
+
+  .list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65vw;
+    font-size: 15px;
+    list-style-type: none;
+    align-self: center;
+    color:black;
+  }
+
+  i{
+    font-size: 20px;
+    color: black;
+  }
+  .active:hover{
+    text-decoration: underline;
+  }
+  .cardss{
+    height: 20vh;
+    width: 50vw;
+    border:2px solid red;
+  }
+  .card-container{
+    display: flex;
+    width: 50vw;
+    
+
+  }
+  a{
+    color: black;
+  }
+  .carousel-container {
+    width: 80%; /* Adjust width as needed */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .carousel-slide p {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  
+
+
+
+  /* animation */
+
+  .text-container {
+    margin-top: 50px;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+  }
+  
+  .animate-text1, .animate-text2 {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    opacity: 0;
+    padding: 10px;
+    white-space: nowrap; 
+  }
+  
+  .animate-text1.active, .animate-text2.active {
+    opacity: 1;
+    right: 0%; 
+    transition: left 1s ease, opacity 0.5s ease;
+    text-decoration: none; 
+  }
+  .carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.spices, .turmaric, .savers, .Small {
+    height: 30vh;
+    width: 45vh;
+    margin-left: 3%;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 30px;
+    color: aliceblue;
+    background-size: cover;
+    background-position: center;
+}
+
+.spices {
+  margin-right: 2%;
+    background-image: url("https://th.bing.com/th/id/OIP.KwPlKUcaMD740ioCnzwXAwHaEo?rs=1&pid=ImgDetMain");
+}
+
+.turmaric {
+    background-image: url("https://th.bing.com/th/id/OIP.zw4EbfT0zqNvdp9XRAEYcwHaE8?w=262&h=180&c=7&r=0&o=5&pid=1.7");
+}
+
+.savers {
+    background-image: url("https://th.bing.com/th?id=OIP.4-_9Hnh8MJQAgoGP5Ib4FgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2");
+}
+
+.Small {
+    background-image: url("https://rootedpeepul.com/cdn/shop/products/WhatsAppImage2023-01-24at2.31.30PM_360x.jpg?v=1674627727");
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+
+
+
+/* Hide scrollbar */
+.example::-webkit-scrollbar {
+    display: none;
+}
+.bg{
+           
+  background-image:url('https://marhabaworld.com/wp-content/uploads/2021/12/grocery-shopping.jpg');
+ 
+  background-repeat: no-repeat;
+  background-size:  100vw 110vh;
+  
+}    
+
+.blurImg{
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+.blurImg:hover{
+     /* filter: blur(); */
+     /* transform: scale(1.05);  */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+     /* filter: drop-shadow(0 0 8px rgba(0 ,0, 0, 0.5)); */
+     /* background-color:rgba(0 ,0, 0, 0.5) ; */
+}
+.color {
+  background-color:whitesmoke;
+  height: 65vh;
+  
+ 
+}
+  
+ 
+
+
+
